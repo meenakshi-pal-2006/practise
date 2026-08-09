@@ -1,0 +1,36 @@
+/* for standard box mode */
+*{
+    margin: 20;
+    padding: 0;
+
+
+}
+.standardbox{
+ box-sizing: content-box;
+    /* for standard box model box sizing value is content-box by default *
+    /* here below width will be applied to the content box */
+    width: 300px;
+    /* here below height will be applied to the content box */
+    height: 150px;
+    /* here the padding will applied in all four directions just outside the content area */
+    padding: 20px;
+    /* it is the line that will be placed after padding are applied */
+    border: 5px solid black;
+    /* this will create space with other html elements on the page and it will be applied on all four sides. */
+    margin: 20px;
+
+}
+.alternatebox{
+    /* here below width will be applied to the content box */
+    width: 300px;
+    /* here below height will be applied to the content box */
+    height: 150px;
+    /* here the padding will applied in all four directions just outside the content area */
+    padding: 20px;
+    /* it is the line that will be placed after padding are applied */
+    border: 5px solid black;
+    /* this will create space with other html elements on the page and it will be applied on all four sides. */
+    margin: 20px;
+    /* for alternate box model */
+    box-sizing: border-box;
+}

@@ -1,0 +1,48 @@
+/* Universal Selector to perform global resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+}
+/* * universal selector has the highest priority all elements will select these styles*/
+/*box-sizing property defines how the total width and height of an HTML element are calculated.
+It controls whether the elements padding and border are added to the specified dimensions or contained within them */
+/* it will have generally two val */
+/* 1. contenet-box:-here dimension only appiesonly to the content (default value for box sizing) 
+content-box formula 
+total width =given_width + padding +  border 
+
+   2. border-box: here the dimensions applies to the content ,padding and border
+   here the widthb wil be the width of the element and the content width will be calculated by subtracting the padding and border from the total width
+
+*/
+p{
+    padding: 5px;
+    /* border: 2px solid red; */
+    font-family: cursive;
+}
+
+
+.highlight{
+    background-color: rgb(18, 99, 126);
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#fourth{
+    font-size: 32px;
+    border: 2px solid black;
+}
+
+#first,#second{
+    color: purple;
+
+}
+
+/* note
+   specificity order
+   id > class >  element all types
+
+*/

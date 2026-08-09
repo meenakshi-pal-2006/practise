@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/012/433/750/original/aesthetic-colorful-pastel-floral-fluid-abstract-background-vector.jpg');
+   
+    font-family: Arial, sans-serif;
+}
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(239, 29, 110, 0.9);
+    padding: 80px 40px;
+    box-sizing: border-box;
+    height: 400px;
+    width: 320px;
+}
+.user{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 50%;
+    top: calc(-100px);
+    left: calc(50% - 50px);
+}
+h2{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    color: #333;
+}
+.login box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #7c5050;
+}
+.login box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login box input[type="text"], .login box input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #999;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #333;
+    font-size: 16px;
+}
+::placeholder{
+    color: #1175af;
+}
+.login box input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1175af;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.login box input[type="submit"]:hover{
+    background: #09d7cd;
+    color: #da126c;
+}
+.login box a{
+    text-decoration: none;
+    font-size: 12px;
+   font-weight: bold;
+    color: #0be65b;
+}
+
+

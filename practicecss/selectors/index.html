@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1><span class="highlight">Selectors</span> in HTML</h1>
+        <!-- selectors are the patterns used to target and select HTML elements.
+         so that we can apply styles to them using CSS or manupulate them using java script.
+         1. basic selectors 
+          this are foundational tools or selectors used to target elements by their inherint HTML identifiers -->
+        <!-- a.Universal Selectors(*)-it matches every single elements in the page and univerasl selectors have most priority.
+            it act wildacard,applying its declared styles to all elements on the page.Generally we used universal selectors for the below scenarios.
+            1.Gobal Reset- we can standarised default browers margin
+            2. box-sizing control- we can forced to have uniform box model across all elements etc.
+        b. Element Selectors/Type selectors- we can target any elements based on their HTML tag name. we can target all the elements of a specific type and apply styles to them.
+        c. Class Selectors(.)- it targets HTML elements based on their value of their class attribute. in css it is written using a (.)followed by the class name. for a particular element we can apply multiple class names 
+           as a result we can ally a combination style to the respective element.
+           Most popular used cases for class selectors are as follws-
+           i.applying re usedable style- if we want to provide same style to multiple elements then we can defined the common style unfer aclass selectors
+           and applying accordingly. we are following dry code principle i.e donot repeate your itself.
+           ii. Modular component design
+           iii.targaeting sepectific elements-For example if we have a requriedment to highlight a centain text in aweb page then we can define the highlight
+           propertise and apply where requried
+        d. Id selector(#)-the CSS id selector matches an elemnt based on the values of the element id attributes. these selectors used to target and style
+           a single comma unique HTML element on a web page by matching its id attribute.Always remember id attributes maust be completely unique within an html document. we used # symbol followed immediately by the exact name of the elements id.
+        e.Group Selectors:
+        if we want to apply same style to different classes or to different elements or to different id or multiple element then we can group 
+        them seperating with a comma.by using these tecnique we cam minimize the code repeation, sling downs ours style sheet and makes our code much easier to maintain. 
+         2.combination selectors:
+                in this selectors, we tergate the elements baed on there hierarchy relationship in the html documentary.
+
+                a. descendent selector
+                    selects all tergate elements inside the specified ancester. no matter how deep it is. we use space to mention this selector.
+                b. child selector
+                    we can select only immediate,direct children of a parent. we use'>' to specify the properties and their respective styles.
+                c. adjusent sibling selectornth
+                    we can select an element that directly followes another specific sibling element. we use class operator to implement this selector.
+                d.general sibling selector
+                    we can select all the sibling elements that follows our specific elements. we use'~'(tiled) symbol to mention the style.
+                e.psudo selector
+                    this selectors are added to the elementsor other types of selectors that specify a special state of the selected elements. they allow us to styleelements based on their state, position or user interaction without adding extra class or id to the elements. these selectors are devided into two catagories---
+                    (i) psudo-classes          (ii)psudo-elements
+
+                (i) psudo-classes
+                    they are used to define a special state of an element. they are preceded by(:) and can be combined with other selectors.
+                       1. nth child(): we can selects the elements based on the formula or expression.Under a particular selector we can select and element based on their 
+                        position among siblings.
+                        2. Focus:we can applied these psedo class an element has focused such as when a user clicks on a textbox.
+                    
+                (ii)psudo-elements
+                    pseudo -elements are used to style specific parts of an elements. they are preceded by '::' 
+                    3. attribute-selector
+                  it allows us to style a html element on the presnce or value of their attributes. these selectors are powerful while tergating specific elements without needing to add extra class or id.
+                
+                 presence selector 
+                   a. we can select elements with the specified attributes.
+                 exact value selector
+                    b.we can select element with an attribute that matches a specific value.
+                 white spece seperatd value selector
+                    c.we can select an element with an attribute value that contain a specified word in a space seperated list.
+                4.Attribute Selectors:it allows us to style elements on the present or value of their attributes.these selectors are powerful while targeting specific elements 
+                    without needing to add extraction or id.
+                    a.presence selecrors:we can selected elements with aspecific attributes.
+                    b.Exact value selector:We can selecte elements with an attribute that matches a specific value.
+                    c.White spaced seperated value selectors:Selects with an attribute value that contain a specified words in a  space sperated list.
+   ----------
+                 CSS tropographic : 
+                 It is the art and techique of arranging text or a webpage to make it readabkle,cleared and visualing appleaing 
+                to the user it involves controlling font choices,size,spacing,alignment and mordern text effects.
+                    1.font-family and sources:These propertise defines the actual type fall or font design used for the text.                        
+                    a. font -family: We can specific a particular for with a element.it is recommended to provide (,) seperated "fallback"fonts so that if the 
+                        user's bowser doesnot support the first mention fonts then it can try the next one always try to put the font name within " " if they have space in thier name.
+                    b.@font-face:by using these rule we can mention to download a specific fonts directly in one wesite.
+                    2. font-size and weight:it is the property that controls the scale of the text that we can use in our html document.
+                        a.font-size:We can set the size of the text.it can be given it terms of various measurment unit.
+                        i.Absoulete Unit(fixed sizing):it doesnot scale well if the user change their browser default font-size.
+                        ii.Releative Unit:It scales in a dynamite way.it is mainly used for making responsive design.we can used em,rem as unit.
+                            here,1 rem means it equal the font-size with root elements font-size.
+                        iii.Viewport:Using these measurment we can scale the font size according to the width and font height of the screen that its browser window.
+                        b.font-weight:it defines how thick or thin the characters will be. we can provides keywords as tne value for this propertise.such as normal bold,border,
+                            lighter.also we can provides values for its property.
+                        3.Spacing and Alignment:By using these propertise we can apply proper spacing and align te text that improves the readiability of our content.
+                          i.line-height:it can controls vertical space b/w lines of text.
+                          ii.letter-spacing : we can adjust the horizontal space b/w individual characters 
+                          iii.word spacing:We can ajust the horizontal space b/w individual whole word spacing.
+                          iv.text-align: we can said the alignment horizontal inside its container.we can have the value such as lift,right,center,justify.
+                        4.Text modification & decoration:
+
+        -->
+        
+
+    </header>
+        <main> 
+            <article>
+                <h2>Universal selectors </h2>
+                <p id="first">lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, architecto.</p>
+            </article>
+            <article class="highlight">   
+                <h2>Element Selectors</h2>
+                <p id ="second">lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, architecto.</p>
+            </article>
+            <article>  
+                <h2>Class Selectors</h2>
+                <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, architecto.</p>
+            </article>
+            <article>  
+                <h2>Id Selectors</h2>
+                <p id="fourth">lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, architecto.</p>
+            </article>
+        </main>
+</body>
+</html>

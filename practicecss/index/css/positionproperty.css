@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    color:white;
+    font-size:1.2rem;
+}
+
+.container{
+    width:300px;
+    height:600px;
+    background:lightpink;
+    margin:50px;
+    border:2px solid black;
+}
+
+.box{
+    width:100px;
+    height:150px;
+    border:2px solid black;
+}
+
+.red{
+    background:red;
+    position:relative;
+    top:50px;
+}
+
+.green{
+    background:green;
+}
+
+.blue{
+    background:blue;
+}
+
+.yellow{
+    background:gold;
+    color:black;
+}
+.space{
+    height:300vh;
+}

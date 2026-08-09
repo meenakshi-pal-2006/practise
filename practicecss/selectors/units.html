@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(68, 68, 142);
+            width: 50%;
+            /* here width will be decided based on their immediate body */
+
+
+        }
+        .sub{
+            background-color: yellowgreen;
+            width: 50%;
+            /* here the widthn will based on the container div  */
+        }
+        </style>
+</head>
+<body>
+    <!-- CSS  values and units.
+        a css rules generally contain decelarations which in turn are composed of propertise and values . each prpperty used in css has a value type that describes what kind of value 
+        it is allow to have.
+        Here css value defines what type of value are valid are each css prpoerties. for example for the property color we can have color names and codes as the value.
+        a value type in css defines a collection of allowed values.
+            For these values we are going to have different units
+        we can classified css units into two categories 
+        1.Absolute units,2. Relative units
+        1. Absolute units:
+            In absolute units we focused in fixed size elements which do not change based on the screen size,user settings or parent elments.On digital screens they are mapped directly 
+            through the css pixel standard.
+            i.px(pixel)-The references unit for digital dislay is pixel.1 px correspond to multiple physical device pixel
+            ii. pt(point)-(1pt=1.33px):it is defines as 1/72 inches.it is the standard unit for print mediunm and the typography.
+            iii.pc(pica)(1pc=16px)-it is defined as 1/6 th inch and it is uised for print stylist.
+            iv. in(inches)(1in=96px):it maps strictly to physiacl measurment.
+            remaining unit are cm,mm & q(quater milimeter) 
+        2.Relative Unit:These units in css compute their based on their external refences such as the roots font-size or a parent elements dimension or the user view port or a
+            container.Unlike absolute units(px,cm),relative units scale dynamically,making them essentiaql for responsibe web design
+        a.font-based relative unit:These units derives their dimension from typographic matrix i.e either the root element,a parent element,or a glyph(symbol) geometric
+         i.em:
+            It relative to the font size of parent element or the element's own font-size.it is based for self contained elements(buttons,badges etc) that need their padding to scale proportionally 
+                whenever the local text sizes changes.nesting multiple elements styled in em causes compound growth.
+         ii.rem():
+            it stands for root em.it calculates the relative size based on the root elemnt based on html by default browser set font-size as 16px for html element.so 1 rem=16px
+            it is based suitable for gobal scalling,section margins,typography heirarchy etc.the biggest argument of using rem instead of px is accessibilitythe reason is if adeveloper sets the font-size 
+            for paragraph as 16px then it is basically a situation where user settings get over ridden.that means if any want to increase the default browser font-sze then it will not allowed to do that fot that element
+            on the otherhand rem helps browser automatically to evaluate the size.
+        b.Viewport relative units:
+            viewport units measured the percentage of windows of browser size i.e 1unit=1%
+            i.vw
+            ii.vh
+            iii.vmin
+            iv.vmax
+        c.Parent and layout:
+            i.Percentage():for these unit the size is calculated relative to their immediate parent block container.
+
+      -->
+        <!-- <h1 style="font-size:16px">h1=16px
+             css pixel depends on density px ratio(dpr). at the time of screen reandering  css pixel converted to device pixel.
+              -->
+            
+        <!-- </h1>
+        <h2 style="font-size: 1pt;">
+            h2=1pt
+        </h2>
+        <h1 style="font-size: 1pc;">
+            h1=1pc
+        </h1>
+        <section style="font-size: 3em;">
+            hello
+            <p style="font-size: 3em;">
+                Lorem, ipsum.
+            </p>
+            
+        </section>
+        <h3 style="font-size: 2rem;">
+            >
+    <section>
+        <div style="background-color: rgb(231, 94, 94);width: 20vw;height:30vw">
+            </div>
+            <div style="background-color: rgb(220, 172, 87);width: 20vmin;height:30vmax">
+            
+        </div>
+
+    </section>  -->
+    <div class="container">
+        Lorem, ipsum.
+        <div class="sub">
+            </div>
+    </div>
+</body>
+</html>

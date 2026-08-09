@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="positionproperty.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- CSS Position property:
+     By using these property we can control how an elemnt is located on a web page and how it interacts with the normal document flow.
+     while using position property we will also have several offset prpoertise as well(they are used to animated and position elmentsbased on the corresponding property value)
+     For position property we have 5 different values:
+        1.static:it is the default forn position property .when it is used respective elements stays strictly in the NORMAL PAGE.here we can not use any offset property as well.it is 
+        used for standard page elments that follows the normal flow of the document.
+        2.Relative: here when it is used  for an element it will be relative with respect to its parent element.
+            here we can move the  respective elments by offset propertise. we it moves relative to its current position then it will not appex surrounding html elemnts 
+         3.Absolute:It does not stayes in the normal follow and the surrounding elemnts behaves in such a way as if elements doesnot exits for which we have absolute position value.
+                    the behaviour of absolute position value is as follows:
+                    generally it is position relative  with repect to nearest ancestor which has a position other than static. if no positioned ancestor exist
+                    then it will positioned with repect to html element
+
+    -->
+<div class="container">
+            <div class="box red"> relative</div>
+            <div class="box green">absolute</div>
+            <div class="box blue">fixed</div>
+            <div class="box yellow">sticky</div>
+            <div class="box blue">absolute</div>
+</div>
+
+</body>
+</html>

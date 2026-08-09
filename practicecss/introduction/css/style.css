@@ -1,0 +1,5 @@
+/* In this CSS file we r declarng rhe properties separetely & we want to connect 
+the CCS file with the HTML doc as aresult the CCS file becomes external CSS */
+body{
+    background-color: bisque;
+}

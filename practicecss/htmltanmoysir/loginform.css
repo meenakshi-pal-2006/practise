@@ -1,0 +1,125 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full page */
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    /* Background image */
+    background-image: url("https://wallpapers.com/images/featured/aesthetic-pictures-hv6f88paqtseqh92.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Login container */
+.login-container {
+    width: 380px;
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.18);
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+
+    color: white;
+}
+
+/* Heading */
+.login-container h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Input section */
+.input-box {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.input-box label {
+    display: block;
+    margin-bottom: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Input fields */
+.input-box input {
+    width: 100%;
+    height: 45px;
+
+    padding: 0 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+
+    font-size: 15px;
+}
+
+/* Placeholder */
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* Input focus */
+.input-box input:focus {
+    border-color: white;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Login button */
+button {
+    width: 100%;
+    height: 45px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: white;
+    color: #333;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Button hover */
+button:hover {
+    background: #eeeeee;
+    transform: translateY(-2px);
+}

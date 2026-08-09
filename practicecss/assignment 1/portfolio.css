@@ -1,0 +1,53 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #d83368;
+    color: #c13947;
+}
+
+header {
+    background-color:light babypink;
+    color: rgb(231, 207, 207);
+    text-align: center;
+    padding: 40px;
+}
+
+nav {
+    background-color: #ff3f8c;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: rgb(235, 228, 234);
+    text-decoration: none;
+    margin: 15px;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(232, 9, 9);
+}
+
+section {
+    background-color: rgb(235, 170, 241);
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 800px;
+}
+
+.project {
+    background-color: #ed7a7a;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* Footer */
+
+footer {
+    background-color: #9edbd7;
+    color: rgb(14, 39, 201);
+    text-align: center;
+    padding: 15px;
+}

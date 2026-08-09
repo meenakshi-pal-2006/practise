@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/boxmodel.css">
+    
+</head>
+<body>
+    <!-- box model is the foundtional layout concept in web development. every html element rendered on a wed page is treated as a rectangular box
+        composed of 4 concentric layer -content,padding,border,margine.
+        Q.What is content box?
+        Ans: In content box we wiil have the actual content i.e text,images or nested html elements. this is the actual four area .
+        the width and height that we set atre applied only to the content.padding, margin,border are added outside the width -height side.
+        padding refers to the space  added inside borderi.e its seperated content and border layer
+       Border- border refers to aline surrounding the padding and the content.we can style border via border- color,border-width,border-style
+       Margin- it is added outside the border thus its creates space from the other element.
+                TYPE OF BORDER ELEMENT
+            Q. how an element total physical widtht & height are calculated depends on the box sizing propertise.based on gthe value of box sizinf we can have two different box model
+                1.Standard box model:
+                    by default browser used content -box value for box sizing property.In these box model if we are setting width=200px then that 200px applies only to the content 
+                    area.any padding amd border are added on the top ofthat width.
+                    total width=margin=left +border-left+padding-left+width+content width+padding-right+border-right+margin-right
+                                =20+5+20+300+20+5+20
+                                =390px
+                               total height=margin-top+border-top+padding-top+height+content height+padding-bottom+border-bottom+margin-bottom
+                                =20+5+20+150+20+5+20
+                                =240px  
+                2.Alternative box model:
+                    here the box sizing proprty value is border-boxthat means if we said the width=200px it includes the content padding and border 
+                        within the total 200px
+                                  -->
+                   <div class="standardbox">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, libero?</p>
+                   </div>
+                    <div class="alterbox">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, nostrum.
+                    </p>
+                    </div>
+                   
+                    
+</body>
+</html>
