@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor - E-commerce Product Page</title>
+  <link rel="stylesheet" href="portf.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <div class="logo">sneakers</div>
+      <nav class="nav-links">
+        <a href="#">Collections</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <div class="cart-icon">
+        <svg width="22" height="20" xmlns="http://w3.org"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1.112l2.392 14.514a1.794 1.794 0 0 0 1.765 1.502h11.23a1.796 1.796 0 0 0 1.758-1.442l1.642-10.428a.896.896 0 0 0-.871-1.077ZM17.472 13.5H6.945L5.433 4.36h13.438l-1.399 9.14ZM7.618 16.333a1.493 1.493 0 1 1-1.493 1.493 1.494 1.494 0 0 1 1.493-1.493Zm8.956 0a1.493 1.493 0 1 1-1.493 1.493 1.494 1.494 0 0 1 1.493-1.493Z" fill="#69707D" fill-rule="nonzero"/></svg>
+      </div>
+      <img src="https://pravatar.cc" alt="Avatar" class="avatar">
+    </div>
+  </header>
+
+  <hr class="divider">
+
+  <!-- Main Product Container -->
+  <main class="product-container">
+    
+    <!-- Left: Gallery Section -->
+    <section class="gallery-section">
+      <div class="main-image-container">
+        <!-- Main image with orange background aesthetic -->
+        <div class="main-image-bg">
+          <img src="https://unsplash.com" alt="Fall Limited Edition Sneakers" class="main-image">
+        </div>
+      </div>
+      <div class="thumbnails-container">
+        <div class="thumbnail active"><img src="https://unsplash.com" alt="Thumbnail 1"></div>
+        <div class="thumbnail"><img src="https://unsplash.com" alt="Thumbnail 2"></div>
+        <div class="thumbnail"><img src="https://unsplash.com" alt="Thumbnail 3"></div>
+        <div class="thumbnail"><img src="https://unsplash.com" alt="Thumbnail 4"></div>
+      </div>
+    </section>
+
+    <!-- Right: Content Section -->
+    <section class="info-section">
+      <span class="company-tag">SNEAKER COMPANY</span>
+      <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+      <p class="product-description">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.
+      </p>
+
+      <div class="price-container">
+        <div class="current-price-row">
+          <span class="price">$125.00</span>
+          <span class="discount">50%</span>
+        </div>
+        <div class="original-price">$250.00</div>
+      </div>
+
+      <div class="purchase-controls">
+        <div class="quantity-selector">
+          <button class="qty-btn" aria-label="Decrease quantity">−</button>
+          <span class="qty-value">0</span>
+          <button class="qty-btn" aria-label="Increase quantity">+</button>
+        </div>
+        <button class="add-to-cart-btn">
+          <svg width="22" height="20" xmlns="http://w3.org"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1.112l2.392 14.514a1.794 1.794 0 0 0 1.765 1.502h11.23a1.796 1.796 0 0 0 1.758-1.442l1.642-10.428a.896.896 0 0 0-.871-1.077ZM17.472 13.5H6.945L5.433 4.36h13.438l-1.399 9.14ZM7.618 16.333a1.493 1.493 0 1 1-1.493 1.493 1.494 1.494 0 0 1 1.493-1.493Zm8.956 0a1.493 1.493 0 1 1-1.493 1.493 1.494 1.494 0 0 1 1.493-1.493Z" fill="#FFF" fill-rule="nonzero"/></svg>
+          Add to cart
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
