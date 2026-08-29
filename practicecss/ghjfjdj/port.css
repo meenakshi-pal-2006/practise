@@ -1,0 +1,708 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f8fc;
+    color: #172b4d;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    background: linear-gradient(135deg, #0754b8, #0064d8);
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px 28px;
+
+    border-radius: 0 0 4px 4px;
+}
+
+.header h1 {
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
+}
+
+
+/* Title line */
+
+.title-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+.title-line span {
+    width: 47px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.45);
+}
+
+.title-line p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navbar {
+    height: 70px;
+
+    background: linear-gradient(
+        135deg,
+        #0754b8,
+        #0064d8
+    );
+
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 75px;
+}
+
+.nav-link {
+    position: relative;
+
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 18px;
+
+    padding: 0 10px;
+
+    transition: 0.3s ease;
+}
+
+.nav-link i {
+    font-size: 21px;
+}
+
+.nav-link:hover {
+    color: #dcecff;
+}
+
+
+/* Active navigation */
+
+.nav-link.active::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 10px;
+    left: 0;
+    right: 0;
+
+    height: 3px;
+
+    background: white;
+
+    border-radius: 5px;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.container {
+    width: 83%;
+    max-width: 1050px;
+
+    margin: 25px auto 25px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.card {
+    background: white;
+
+    min-height: 210px;
+
+    margin-bottom: 25px;
+
+    padding: 40px;
+
+    border-radius: 14px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 40px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.06);
+
+    border: 1px solid #edf1f6;
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 25px rgba(0, 70, 150, 0.10);
+}
+
+
+/* =========================================
+   SECTION ICON
+========================================= */
+
+.section-icon {
+    width: 98px;
+    height: 98px;
+
+    min-width: 98px;
+
+    border-radius: 50%;
+
+    background: #0964d5;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 43px;
+}
+
+
+/* =========================================
+   SECTION CONTENT
+========================================= */
+
+.section-content {
+    flex: 1;
+}
+
+.section-content h2 {
+    color: #0755b9;
+
+    font-size: 27px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Heading underline */
+
+.heading-line {
+    width: 53px;
+    height: 3px;
+
+    background: #0867d8;
+
+    margin-bottom: 17px;
+}
+
+
+/* About text */
+
+.section-content > p {
+    max-width: 780px;
+
+    font-size: 17px;
+
+    line-height: 1.65;
+
+    color: #263a58;
+}
+
+
+/* =========================================
+   SKILLS
+========================================= */
+
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 4px;
+
+    min-height: 100px;
+}
+
+.skill {
+    text-align: center;
+
+    min-width: 90px;
+}
+
+.skill p {
+    color: #172b4d;
+
+    font-size: 17px;
+
+    margin-bottom: 8px;
+}
+
+.skill i {
+    font-size: 52px;
+}
+
+
+/* HTML */
+
+.html-icon {
+    color: #1769c2;
+}
+
+
+/* CSS */
+
+.css-icon {
+    color: #1769c2;
+}
+
+
+/* JavaScript */
+
+.js-icon {
+    color: #f1d000;
+}
+
+
+/* Divider */
+
+.skill-divider {
+    width: 2px;
+    height: 55px;
+
+    background: #dbe5f2;
+}
+
+
+/* =========================================
+   C / C++ ICONS
+========================================= */
+
+.cpp-icon,
+.c-icon {
+    width: 54px;
+    height: 54px;
+
+    border-radius: 50%;
+
+    background: #0864c7;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+
+    font-size: 29px;
+    font-weight: bold;
+
+    box-shadow:
+        inset -7px -4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.cpp-icon sup {
+    font-size: 14px;
+    margin-left: 2px;
+}
+
+
+/* =========================================
+   PROJECT
+========================================= */
+
+.project {
+    background: linear-gradient(
+        100deg,
+        #edf5ff,
+        #f1f6fc
+    );
+
+    border-radius: 10px;
+
+    padding: 25px 25px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    margin-top: 8px;
+}
+
+
+/* Project monitor */
+
+.project-icon {
+    position: relative;
+
+    width: 70px;
+    height: 70px;
+
+    min-width: 70px;
+
+    color: #075dc4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 57px;
+}
+
+.project-code {
+    position: absolute;
+
+    font-size: 17px;
+
+    top: 24px;
+    left: 26px;
+
+    color: #075dc4;
+}
+
+
+/* Project details */
+
+.project-info h3 {
+    color: #075dc4;
+
+    font-size: 22px;
+
+    margin-bottom: 8px;
+}
+
+.project-info p {
+    color: #263a58;
+
+    font-size: 15px;
+
+    margin-bottom: 13px;
+}
+
+
+/* Project button */
+
+.project-btn {
+    display: inline-block;
+
+    padding: 10px 17px;
+
+    background: #0865d1;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 4px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+.project-btn:hover {
+    background: #034da7;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-info {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 16px;
+
+    color: #263a58;
+}
+
+.contact-info > i {
+    width: 27px;
+    height: 27px;
+
+    border-radius: 50%;
+
+    background: #0865d1;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+
+    margin-right: 3px;
+}
+
+.contact-info a {
+    color: #075dc4;
+
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: linear-gradient(
+        135deg,
+        #0754b8,
+        #0064d8
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 22px;
+
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 15px;
+
+    margin-bottom: 18px;
+}
+
+
+/* Social icons */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+
+    gap: 32px;
+}
+
+.social-links a {
+    color: white;
+
+    font-size: 25px;
+
+    transition: 0.25s ease;
+}
+
+.social-links a:hover {
+    color: #cfe4ff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 800px) {
+
+    .header h1 {
+        font-size: 38px;
+    }
+
+    .navbar {
+        gap: 20px;
+    }
+
+    .nav-link {
+        font-size: 15px;
+        gap: 7px;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .card {
+        padding: 25px;
+
+        gap: 25px;
+    }
+
+    .section-icon {
+        width: 75px;
+        height: 75px;
+
+        min-width: 75px;
+
+        font-size: 32px;
+    }
+
+    .skills-container {
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    .skill-divider {
+        display: none;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+
+    .header {
+        padding: 25px 15px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .title-line {
+        gap: 15px;
+    }
+
+    .title-line p {
+        font-size: 16px;
+    }
+
+    .navbar {
+        height: auto;
+
+        padding: 10px;
+
+        gap: 8px;
+
+        flex-wrap: wrap;
+    }
+
+    .nav-link {
+        height: 45px;
+
+        font-size: 13px;
+
+        padding: 0 8px;
+    }
+
+    .nav-link i {
+        font-size: 17px;
+    }
+
+    .nav-link.active::after {
+        bottom: 0;
+    }
+
+    .container {
+        width: 94%;
+
+        margin-top: 15px;
+    }
+
+    .card {
+        flex-direction: column;
+
+        padding: 25px;
+
+        gap: 20px;
+
+        align-items: flex-start;
+    }
+
+    .section-icon {
+        width: 65px;
+        height: 65px;
+
+        min-width: 65px;
+
+        font-size: 28px;
+    }
+
+    .section-content h2 {
+        font-size: 24px;
+    }
+
+    .section-content > p {
+        font-size: 15px;
+    }
+
+    .skills-container {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        width: 100%;
+
+        gap: 25px;
+    }
+
+    .skill-divider {
+        display: none;
+    }
+
+    .project {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 20px;
+    }
+
+    .contact-info {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+}
