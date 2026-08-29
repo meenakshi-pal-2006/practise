@@ -1,0 +1,42 @@
+.landing_page{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+             "header header"
+             "nav nav"
+             "aside main"
+             "footer footer";
+             justify-items:auto;
+}
+header{
+    grid-area: header;
+    padding: 20px;
+    background: rgb(42, 165, 42);
+}
+
+
+nav{
+    grid-area: nav;
+    padding: 20px;
+    background: rgb(237, 130, 130);
+}
+aside{
+    grid-area: aside;
+    padding: 20px;
+    background: rgb(165, 119, 18);
+}
+
+main{
+  
+    grid-area: main;
+    padding: 20px;
+    background: rgb(133, 96, 217);
+}
+
+
+footer{
+    grid-area: footer;
+    padding: 20px;
+    background: rgb(215, 167, 167);
+
+}

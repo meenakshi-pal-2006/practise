@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">ShopNow</div>
+
+    <div class="cart">
+      🛒
+      <span class="cart-count" id="cartCount">0</span>
+    </div>
+  </nav>
+
+  
+  <main class="container">
+
+    <div class="title">
+      <h1>Shopping Dashboard</h1>
+      <p>Choose your favorite products</p>
+    </div>
+
+    <div class="products">
+
+    
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Watch">
+
+        <div class="product-info">
+          <h3>Classic Watch</h3>
+          <p class="price">$49.99</p>
+
+          <button class="add-btn" onclick="addToCart('Classic Watch')">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Shoes">
+
+        <div class="product-info">
+          <h3>Running Shoes</h3>
+          <p class="price">$79.99</p>
+
+          <button class="add-btn" onclick="addToCart('Running Shoes')">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+     
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500" alt="Camera">
+
+        <div class="product-info">
+          <h3>Digital Camera</h3>
+          <p class="price">$299.99</p>
+
+          <button class="add-btn" onclick="addToCart('Digital Camera')">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500" alt="Headphones">
+
+        <div class="product-info">
+          <h3>Headphones</h3>
+          <p class="price">$59.99</p>
+
+          <button class="add-btn" onclick="addToCart('Headphones')">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  
+  <div class="message" id="message">
+    Product added to cart!
+  </div>
+
+
+  <script>
+    let cartCount = 0;
+    function addToCart(productName) {      
+      cartCount++;      
+      document.getElementById("cartCount").textContent = cartCount;      
+      const message = document.getElementById("message");
+      message.textContent = productName + " added to cart!";
+      message.style.display = "block";     
+      setTimeout(() => {
+        message.style.display = "none";
+      }, 2000);
+    }
+  </script>
+</body>
+</html>

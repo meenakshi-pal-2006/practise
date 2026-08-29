@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.container{
+    width:100%;
+    max-width: 450px;
+    padding: 20px;
+}
+.form-box{
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+h2{
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.subtitle{
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.input-box{
+    margin-bottom: 20px;
+}
+.input-box label{
+    display: block;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.input-box input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    transition:0.3s;
+}
+.input-box input:focus{
+    border-color: #9b59b6;
+    box-shadow: 0 0 5px rgba(155, 89, 182, 0.5);
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.options label{
+    color: #666;
+}
+.options input{
+    margin-right: 5px;
+}
+a{
+    color: #9b59b6;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition:0.3s;
+    font-weight: 500;
+}
+button:hover{
+    box-shadow: 0 5px 15px rgba(155, 89, 182, 0.5);
+    transform: translateY(-2px);
+}
+.switch{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+.switch a{
+    font-weight: 500;
+}
+@media (max-width: 500px){
+    .container{
+        padding: 10px;
+    }
+    .form-box{
+        padding: 20px;
+    }
+    h2{
+        font-size: 20px;
+    }
+}
